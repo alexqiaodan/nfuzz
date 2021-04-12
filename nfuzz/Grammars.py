@@ -33,14 +33,14 @@ import copy
 import sys
 
 if __package__ is None or __package__ == "":
-    import Fuzzer
+    pass
 else:
-    from . import Fuzzer
+    pass
 
 if __package__ is None or __package__ == "":
-    from MutationFuzzer import MutationFuzzer  # minor dependency
+    pass
 else:
-    from .MutationFuzzer import MutationFuzzer  # minor dependency
+    pass
 
 import re
 

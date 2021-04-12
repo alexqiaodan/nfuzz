@@ -31,30 +31,29 @@ import time
 
 import requests
 import string
-from http.server import HTTPServer, BaseHTTPRequestHandler
+from http.server import BaseHTTPRequestHandler
 from http import HTTPStatus
-from IPython.display import display
+
 if __package__ is None or __package__ == "":
-    from nfuzz_utils import HTML
+    pass
 else:
-    from .nfuzz_utils import HTML
+    pass
 import urllib.parse
-from urllib.parse import urljoin, urlsplit
-import sys
+from urllib.parse import urljoin
 import traceback
 from html.parser import HTMLParser
 if __package__ is None or __package__ == "":
-    from Fuzzer import Runner
+    from nfuzz.Fuzzer import Runner
 else:
     from .Fuzzer import Runner
 
 if __package__ is None or __package__ == "":
-    from GrammarFuzzer import GrammarFuzzer
+    from nfuzz.GrammarFuzzer import GrammarFuzzer
 else:
     from .GrammarFuzzer import GrammarFuzzer
 
 if __package__ is None or __package__ == "":
-    from Grammars import crange, srange, new_symbol, unreachable_nonterminals, CGI_GRAMMAR, extend_grammar, is_valid_grammar
+    from nfuzz.Grammars import crange, srange, new_symbol, unreachable_nonterminals, CGI_GRAMMAR, extend_grammar, is_valid_grammar
 else:
     from .Grammars import crange, srange, new_symbol, unreachable_nonterminals, CGI_GRAMMAR, extend_grammar, is_valid_grammar
 

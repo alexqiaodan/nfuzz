@@ -12,14 +12,14 @@ with open("README.md", "r") as fh:
   long_description = fh.read()
 
 setuptools.setup(
-  name="nfuzz_utils",
-  version="0.0.1",
-  author="Example Author",
+  name="nfuzz",
+  version="0.0.2",
+  author="alexqiaodan",
   author_email="sunqiao@corp.netease.com",
   description="A useful tool for fuzz job.",
   long_description=long_description,
   long_description_content_type="text/markdown",
-  url="https://github.com/pypa/sampleproject",
+  url="https://github.com/alexqiaodan/nfuzz",
   packages=setuptools.find_packages(),
   classifiers=[
   "Programming Language :: Python :: 3",

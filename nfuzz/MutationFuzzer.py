@@ -34,17 +34,17 @@ except ImportError:
     from urllib.parse import urlparse  # Python 3
 
 try:
-    from Fuzzer import fuzzer
+    from nfuzz.Fuzzer import fuzzer
 except ImportError:
     from .Fuzzer import fuzzer
 
 try:
-    from Fuzzer import Fuzzer
+    from nfuzz.Fuzzer import Fuzzer
 except ImportError:
     from .Fuzzer import Fuzzer
 
 try:
-    from Fuzzer import Runner
+    from nfuzz.Fuzzer import Runner
 except ImportError:
     from .Fuzzer import Runner
 

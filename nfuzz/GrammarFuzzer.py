@@ -30,25 +30,25 @@ SOFTWARE.
 import random
 import copy
 if __package__ is None or __package__ == "":
-    from nfuzz_utils import unicode_escape
+    from nfuzz.nfuzz_utils import unicode_escape
 else:
-    from .nfuzz_utils import unicode_escape
+    from nfuzz.nfuzz_utils import unicode_escape
 
 if __package__ is None or __package__ == "":
-    from Grammars import EXPR_EBNF_GRAMMAR, convert_ebnf_grammar, simple_grammar_fuzzer, is_valid_grammar, exp_string, exp_opts, START_SYMBOL, EXPR_GRAMMAR, URL_GRAMMAR, CGI_GRAMMAR, RE_NONTERMINAL, nonterminals, is_nonterminal
+    from nfuzz.Grammars import EXPR_EBNF_GRAMMAR, convert_ebnf_grammar, is_valid_grammar, exp_string, START_SYMBOL, EXPR_GRAMMAR, \
+        RE_NONTERMINAL, nonterminals, is_nonterminal
 else:
-    from .Grammars import EXPR_EBNF_GRAMMAR, convert_ebnf_grammar, simple_grammar_fuzzer, is_valid_grammar, exp_string, exp_opts, START_SYMBOL, EXPR_GRAMMAR, URL_GRAMMAR, CGI_GRAMMAR, RE_NONTERMINAL, nonterminals, is_nonterminal
-
-from graphviz import Digraph
+    from .Grammars import EXPR_EBNF_GRAMMAR, convert_ebnf_grammar, is_valid_grammar, exp_string, START_SYMBOL, EXPR_GRAMMAR, \
+        RE_NONTERMINAL, nonterminals, is_nonterminal
 
 if __package__ is None or __package__ == "":
-    from ExpectError import ExpectTimeout
+    pass
 else:
-    from .ExpectError import ExpectTimeout
+    pass
 
 
 if __package__ is None or __package__ == "":
-    from Fuzzer import Fuzzer
+    from nfuzz.Fuzzer import Fuzzer
 else:
     from .Fuzzer import Fuzzer
 

@@ -13,7 +13,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
   name="nfuzz",
-  version="0.0.2",
+  version="0.0.3",
   author="alexqiaodan",
   author_email="sunqiao@corp.netease.com",
   description="A useful tool for fuzz job.",
@@ -26,4 +26,5 @@ setuptools.setup(
   "License :: OSI Approved :: MIT License",
   "Operating System :: OS Independent",
   ],
+  install_requires=['requests', 'iPython', 'nbformat','graphviz'],
 )

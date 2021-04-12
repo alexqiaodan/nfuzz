@@ -1,0 +1,13 @@
+/__pycache__
+/nfuzzEnv
+*.iml
+*.pyc
+.idea
+#.gitignore
+/.project
+/.pydevproject
+/ENV
+/build
+/dist
+/nfuzz_utils.egg-info
+/nfuzz.egg-info

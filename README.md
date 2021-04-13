@@ -1,5 +1,5 @@
 # NFuzz
-NFuzz has been created to conduct fuzzy testing and it is based on a simple concept: it generates the FUZZ keywords by an excellent fuzz grammar method that is created by this job. And it also provides a 
+NFuzz has been created to conduct fuzzy testing and it is based on a simple concept: it generates the FUZZ keywords by an excellent fuzz grammar method that is created by this job. And it also provides a simple WebFuzzer for daily use.  
 
 ## Installation
 To install NFuzz, simply use pip:

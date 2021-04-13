@@ -43,11 +43,13 @@ if __name__ == "__main__":
 ## Generate random characters with MutationFuzzer
 ```
 from nfuzz.MutationFuzzer import MutationFuzzer
-seed_input = "http://www.baidu.com/"
-mutation_fuzzer = MutationFuzzer(seed=[seed_input])
-for i in range(20):
-    inp = mutation_fuzzer.fuzz()
-    print(inp)
+if __name__ == "__main__":
+    print('\n### Generate random characters with MutationFuzzer')
+    seed_input = "http://www.baidu.com/"
+    mutation_fuzzer = MutationFuzzer(seed=[seed_input])
+    for i in range(20):
+        inp = mutation_fuzzer.fuzz()
+        print(inp)
 ```
 
 
@@ -83,6 +85,7 @@ URL_GRAMMAR = {
 }
 
 if __name__ == "__main__":
+print('\n### Generate random characters with GrammarFuzzer')
     f = GrammarFuzzer(URL_GRAMMAR, log=False, min_nonterminals=10)
     for i in range(10):
         res = f.fuzz()

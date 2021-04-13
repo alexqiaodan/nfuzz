@@ -1,5 +1,10 @@
+[![Website nfuzz-pypi](https://img.shields.io/badge/Made%20with-PyPI-green.svg)](https://pypi.org/project/nfuzz/)
+&nbsp;
+[![Made with Python](https://img.shields.io/badge/Made%20with-Python-blue.svg)](https://www.python.org/)
+&nbsp;
+[![License: MIT (Code) nfuzz](https://img.shields.io/badge/License-MIT_(Code),nfuzz-blue.svg)](https://github.com/alexqiaodan/nfuzz/blob/master/README.md)
 # NFuzz
-NFuzz has been created to conduct fuzzy testing and it is based on a simple concept: it generates the FUZZ keywords by an excellent fuzz grammar method that is created by this job. And it also provides a 
+NFuzz has been created to conduct fuzzy testing and it is based on a simple concept: it generates the FUZZ keywords by an excellent fuzz grammar method that is created by this job. And it also provides a simple WebFuzzer for daily use.  
 
 ## Installation
 To install NFuzz, simply use pip:

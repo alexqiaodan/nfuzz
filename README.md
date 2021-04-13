@@ -1,4 +1,4 @@
-[![Website nfuzz-pypi](https://img.shields.io/badge/Made%20with-PyPI-green.svg)](https://pypi.org/project/nfuzz/)
+[![Website nfuzz-pypi](https://img.shields.io/badge/Usage-PyPI-green.svg)](https://pypi.org/project/nfuzz/)
 &nbsp;
 [![Made with Python](https://img.shields.io/badge/Made%20with-Python-blue.svg)](https://www.python.org/)
 &nbsp;

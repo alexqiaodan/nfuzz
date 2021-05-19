@@ -36,14 +36,6 @@ if __name__ == "__main__":
     print(fuzzer.fuzz())
 ```
 
-## Generate random characters
-```
-from nfuzz.Fuzzer import RandomFuzzer
-if __name__ == "__main__":
-    print('\n### Generate random characters')
-    fuzzer = RandomFuzzer()
-    print(fuzzer.fuzz())
-```
 
 ## Generate random characters with MutationFuzzer
 ```

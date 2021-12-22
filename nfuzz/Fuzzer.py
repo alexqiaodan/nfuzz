@@ -39,7 +39,9 @@ def fuzzer(max_length=100, char_start=32, char_range=32):
     string_length = random.randrange(0, max_length + 1)
     out = ""
     for i in range(0, string_length):
-        out += chr(random.randrange(char_start, char_start + char_range))
+        # out += chr(random.randrange(char_start, char_start + char_range))
+        out.append(chr(random.randrange(char_start, char_start + char_range)))
+        out = ''.join(out)
     return out
 
 
@@ -165,8 +167,10 @@ class RandomFuzzer(Fuzzer):
         string_length = random.randrange(self.min_length, self.max_length + 1)
         out = ""
         for i in range(0, string_length):
-            out += chr(random.randrange(self.char_start,
-                                        self.char_start + self.char_range))
+            # out += chr(random.randrange(self.char_start,
+            #                             self.char_start + self.char_range))
+            out.append(chr(random.randrange(self.char_start, self.char_start + self.char_range)))
+            out = ''.join(out)
         return out
 
 
